@@ -1,0 +1,13 @@
+<p>call-api works!</p>
+<button mat-raised-button color="primary" (click)="callApi()">Call API</button>
+<h2 *ngFor="let trip of trips">{{ trip.name }}</h2>
+
+<mat-form-field appearance="outline" style="padding-left: 20px">
+  <input matInput #keyword />
+</mat-form-field>
+<button mat-raised-button color="primary" (click)="findOne(keyword)">FindOne</button>
+
+<mat-form-field appearance="outline" style="padding-left: 20px">
+  <input matInput #name />
+</mat-form-field>
+<button mat-raised-button color="primary" (click)="findName(name)">FindName</button>
